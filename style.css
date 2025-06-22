@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
+  background-image: radial-gradient(circle at top left, #121212 10%, #000000 100%);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.image-container img {
+  width: 300px;
+  filter: drop-shadow(0 0 15px #00eaff70);
+  animation: botFloat 4.5s ease-in-out infinite alternate, fadeIn 2s ease forwards;
+}
+
+@keyframes botFloat {
+  0% { transform: translateY(-20px); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.image-container h1 {
+  font-size: 64px;
+  margin-top: 15px;
+  background-image: linear-gradient(to right, #ff4d00, #00c3ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  animation: textFade 1.5s ease forwards;
+}
+
+@keyframes textFade {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.image-container p {
+  font-size: 20px;
+  margin: 10px 0 30px;
+  background-image: linear-gradient(90deg, #44daff, #83bbff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation:  2s ease forwards;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #101010, #002b5a);
+  border-radius: 40px;
+  padding: 14px 25px;
+  gap: 15px;
+  box-shadow: 0 0 20px #0077ff88;
+  transition: all 0.3s ease-in-out;
+}
+
+.talk {
+  background-color: #000;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.talk:hover {
+  background-color: #00ffff33;
+  transform: scale(1.05);
+}
+
+.talk::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #00ffff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  animation: micPulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes micPulse {
+  0% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.7);
+  }
+}
+
+.content {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  max-width: 260px;
+}
+
+@media only screen and (max-width: 500px) {
+  .image-container img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .image-container h1 {
+    font-size: 42px;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+
+  .input {
+    flex-direction: column;
+    gap: 12px;
+    width: 90%;
+  }
+}
