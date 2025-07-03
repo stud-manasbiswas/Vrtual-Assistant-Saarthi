@@ -10,7 +10,7 @@
 <tr>
 <td align="right">
 
-<img src="https://img.shields.io/badge/HTML-CSS-JS-orange?style=flat-square" alt="Tech Stack Badge">
+
 <img src="https://img.shields.io/badge/Voice%20Assistant-Web%20Speech%20API-blueviolet?style=flat-square" alt="Voice Assistant Badge">
 
 </td>
