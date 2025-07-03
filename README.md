@@ -6,6 +6,17 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+<table>
+<tr>
+<td align="right">
+
+<img src="https://img.shields.io/badge/HTML-CSS-JS-orange?style=flat-square" alt="Tech Stack Badge">
+<img src="https://img.shields.io/badge/Voice%20Assistant-Web%20Speech%20API-blueviolet?style=flat-square" alt="Voice Assistant Badge">
+
+</td>
+</tr>
+</table>
+
 
 **Saarthi** is a **voice-activated virtual assistant** built with **HTML, CSS, and JavaScript**. It uses the Web Speech API to listen and respond to your voice commands. You can search the web, get time and date, open websites, and more — just by speaking!
 
