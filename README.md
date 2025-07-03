@@ -38,10 +38,11 @@
 
 ## 📂 Project Structure
 
-├── index.html # Main HTML page
-├── style.css # Stylesheet for UI
-├── script.js # Core logic: Speech Recognition + Voice Response
-├── README.md # Documentation 
+- `index.html` → Main HTML page  
+- `style.css` → Stylesheet for UI  
+- `script.js` → Core logic: Speech Recognition + Voice Response  
+- `README.md` → Documentation  
+
 
 ---
 
